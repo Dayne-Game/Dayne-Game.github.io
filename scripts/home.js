@@ -1,5 +1,6 @@
 
 function homeContent() {
+    document.querySelector('title').innerHTML = "Home Page";
     document.querySelector('.right-content').innerHTML = `
     <h1> Welcome to my Portfolio</h1>
     <h5>Hi my name is Dayne Game and im 16 years old and from Auckland, New Zealand</h5>
