@@ -1,1 +1,0 @@
-const studybtn = document.querySelector('#studybtn');

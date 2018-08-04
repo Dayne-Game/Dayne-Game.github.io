@@ -6,28 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <div class="left-content">
-        <div class="user"></div>
-        <nav>
-            <button id="homebtn">Home Page</button>
-            <button id="aboutbtn">About Me</button>
-            <button id="studybtn">Study Page</button>
-            <button id="dreambtn">Dream Page</button>
-            <button id="examplebtn">Examples</button>
-        </nav>
+    <nav id="sidebar">
+        <div class="logo"></div>
+        <ul class="link-box">
+            <li><a href="#">Home Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">About Me <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Study Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">My Career Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Temp Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Temp Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Temp Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Temp Page <i class="fas fa-caret-left"></i></a></li>
+            <li><a href="#">Contact Me! <i class="fas fa-caret-left"></i></a></li>
+        </ul>
+            <a href="#" class="icon" onclick="show_hide_menu()">
+                <div class="toggler" onclick="change_image()"></div>
+            </a>
+    </nav>
+    <div class="content">
+        <div class="background1">
+            <div class="text-box-1">
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+        </div>
+            <div class="background2">
+                <h1>Useful Links:</h1>
+                <div class="card" style="width: 30%">
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fab fa-github"></i> Github: <a href="https://www.github.com/Dayne-Game" target="_blank"><span class="link-name">Dayne-Game</span></a></li>
+                    <li class="list-group-item"><i class="fab fa-bitbucket"></i> Bitbucket: <a href="https://bitbucket.org/DayneGame/" target="_blank"><span class="link-name">DayneGame</span></a></li>
+                    <li class="list-group-item"><i class="fas fa-envelope"></i> Email: <a href="" target="_blank"><span class="link-name">daynegame024@gmail.com</span></a></li>
+                    <li class="list-group-item"><i class="fas fa-phone"></i> Phone Number: <span class="link-name">02102993594</span></li>
+                    </ul>
+                </div>
+            </div>
     </div>
-    <div class="right-content"></div>
-    <!-- this script has all functions that all the pages will use -->
-    <script src="scripts/script.js"></script> 
-    <script src="scripts/home.js"></script>
-    <script src="scripts/about.js"></script>
-    <script src="scripts/examples.js"></script>
-    <script src="scripts/study.js"></script>
-    <script src="scripts/dream.js"></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script src="script.js"></script>
 </body>
 </html>
