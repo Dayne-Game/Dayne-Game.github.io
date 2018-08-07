@@ -10,7 +10,17 @@
     --padding-20px: 20px;
 }
 body {
-    background-color: lightgray !important;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Geneva, Tahoma, Verdana, sans-serif !important; 
+}
+.text-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    max-width: 250px;
 }
 nav {
     height: var(--nav-height);
@@ -29,14 +39,17 @@ nav {
     padding-top: var(--padding-20px);
 }
 
-a {
+.link-box > li > a {
     text-decoration: none;
-    color: lightcoral !important;
+    color: red !important;
 }
 .link-box > li > a:hover {
     color: #333 !important;
     font-weight: bold !important;
     text-decoration: none !important;
+}
+.icons {
+    float: right;
 }
 .content {
     width: calc(100% - 200px);
@@ -63,22 +76,39 @@ a {
 }
 .background1 {
     width: 100%;
-    height: auto;
+    min-height: 50%;
     color: white;
     padding: 20px;
-    background-image: url('images/background-2.png');
-    left: -2880px;
-    top: 0px;
-    background-position-y: -400px;
+    position: relative;
+    background-image: url('images/road.jpg');
+    background-size: cover;
+    /* background-color: #0087C9; */
+    /* background-color: #bada55; */
 }
 .background2 {
     width: 100%;
-    height: auto;
+    min-height: 50%;
     padding: 20px;
-    background-image: linear-gradient(120deg,rgba(245,33,33,0) 87%,rgba(255,255,255,0.08) 15%),linear-gradient(110deg,rgba(27,0,255,0) 85%,rgba(255,255,255,0.08) 15%),linear-gradient(103deg,rgba(255,33,33,0) 84%,rgba(255,255,255,0.08) 15%),radial-gradient(circle,#0087C9 0%,#0087C9 100%);
+    background-image: linear-gradient(120deg, red 70%, red 70%,#333 15%,#333 85%);
+}
+.background-3 {
+    width: 100%;
+    min-height: 33.3%;
+    padding: 40px;
+    color: white !important;
+    background-image: url('images/background-2.png');
+    background-size: cover;
+
+}
+.row {
+    margin-top: 20px !important;
 }
 .text-box-1 {
-    width: 70%;
+    width: 100%;
+}
+.list-group-item > a:hover {
+    font-weight: bold;
+    text-decoration: none;
 }
 .logo {
     width: 210px;
@@ -103,6 +133,42 @@ a {
 .link-name {
     color: royalblue;
 }
+.card {
+    font-size: 20pt;
+}
+.panel-title {
+    color: white;
+}
+.box1 {
+    background-image: url('images/backdrop.jpg');
+    background-size: cover;
+    min-height: 60%;
+    width: 100%;
+}
+.about-text {
+    color: white;
+    padding: 20px;
+}
+.box2 {
+    background-color: #333;
+    width: 100%;
+    min-height: 40%;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+.box2 > .row {
+    padding-left: 110px;
+    padding-bottom: 40px;
+}
+.box3 {
+    background-image: url('images/backdrop2.jpg');
+    background-size: cover;
+    min-height: 60%;
+    width: 100%;
+    margin-top: -10px;
+}
 @media screen and (max-width: 768px) {
     nav {
         width: 100%;
@@ -117,6 +183,7 @@ a {
         text-align: left;
         margin: 0;
         display: none;
+        
     }
     .icon {
         position: absolute;
@@ -142,5 +209,17 @@ a {
     }
     li:last-child {
         padding-bottom: 20px;
+    }
+    .card {
+        width: 100% !important;
+        font-size: 15pt;
+    }
+    .text-box-1 {
+        width: 100% !important
+    }
+}
+@media screen and (min-width: 768px) {
+    .card {
+        width: 50% !important;
     }
 }
