@@ -34,6 +34,7 @@ nav {
     text-align: right;
     margin: 15vh 10px 10px 10px;
     display: block;
+    z-index: 999;
 }
 .link-box > li {
     padding-top: var(--padding-20px);
@@ -82,6 +83,7 @@ nav {
     position: relative;
     background-image: url('images/road.jpg');
     background-size: cover;
+    z-index: -1;
     /* background-color: #0087C9; */
     /* background-color: #bada55; */
 }
