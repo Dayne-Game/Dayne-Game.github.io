@@ -1,6 +1,7 @@
-@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.eot");
-@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.svg");
-@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.woff");
+@font-face {
+  font-family: Marker felt;
+  src: url(Marker-Felt.ttf.woff);
+}
 
 * {
   box-sizing: border-box;
