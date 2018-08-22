@@ -1,0 +1,225 @@
+@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.eot");
+@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.svg");
+@import url("../webfonts_Marker-Felt/Marker-Felt.ttf.woff");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #444;
+}
+
+nav {
+  height: 100vh;
+  width: 200px;
+  display: block;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 0px 10px #333;
+}
+
+.link-box {
+  text-align: right;
+  margin: 15vh 10px 10px 10px;
+  display: block;
+  z-index: 999;
+  padding: 0 !important;
+}
+
+.link-box > li {
+  padding-top: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.link-box > li > a {
+  text-decoration: none;
+  color: red !important;
+}
+
+.link-box > li > a:hover {
+  color: #333 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+.icons {
+  float: right;
+}
+
+.icon {
+  display: none;
+}
+
+.toggler {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-image: url("../images/notcross.svg");
+  background-size: cover;
+}
+
+.togglerChange {
+  background-image: url("../images/cross.svg") !important;
+  background-size: cover !important;
+}
+
+.logo {
+  width: 90%;
+  height: 200px;
+  background-image: url("../images/Unknown.svg");
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.active {
+  display: block !important;
+}
+
+.list-group-item > a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content {
+  width: calc(100% - 200px);
+  height: 100vh;
+  float: right;
+  color: white;
+}
+
+.main-panel {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+  width: 100%;
+  padding-top: 10%;
+  color: white;
+  text-align: center;
+}
+
+.home-name {
+  color: gray;
+}
+
+.home-title {
+  font-size: 50pt;
+  margin: auto;
+}
+
+.text-panel {
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+section {
+  padding: 80px 0px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.bio {
+  background-color: white;
+  color: #444;
+}
+
+.link-section {
+  width: 100%;
+  background-color: red;
+  height: auto;
+}
+
+.link-circle {
+  background-color: white;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.link-circle:hover {
+  background-color: #444;
+}
+
+.fa-github,
+.fa-bitbucket,
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  color: red;
+  font-size: 50pt;
+  margin-top: 22px;
+}
+
+.code-panel {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/code-background.jpg");
+  background-size: cover;
+}
+
+footer {
+  height: 80px;
+  line-height: 80px;
+  background-color: #444;
+  color: white;
+}
+
+footer > p {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+  }
+  .link-box {
+    text-align: left;
+    margin: 0;
+    display: none;
+  }
+  .content {
+    margin-top: 70px;
+    width: 100%;
+  }
+  .icon {
+    position: absolute;
+    display: block;
+    float: right;
+    top: 0;
+    right: 0;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  a {
+    padding: 10px;
+    float: none;
+    color: white;
+  }
+  li {
+    background-color: white;
+    padding: 5px;
+  }
+  li:last-child {
+    padding-bottom: 20px;
+  }
+  .card {
+    margin-top: 10px !important;
+  }
+}

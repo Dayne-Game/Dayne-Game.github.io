@@ -1,78 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Welcome to my Portfolio</title>
 </head>
+
 <body>
-    <nav id="sidebar">
+    <nav>
         <div class="logo"></div>
         <ul class="link-box">
-            <li><a href="index.html">Home Page <i class="fas fa-caret-left"></i></a></li>
-            <li><a href="about.html">About Me <i class="fas fa-caret-left"></i></a></li>
-            <li><a href="#">Study Page <i class="fas fa-caret-left"></i></a></li>
-            <li><a href="#">My Career Page <i class="fas fa-caret-left"></i></a></li>
-            <li><a href="#">Contact Me! <i class="fas fa-caret-left"></i></a></li>
+            <li>
+                <a href="index.html">Home Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">About Me
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Study Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Career Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Contact Me!
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
         </ul>
-            <a href="#" class="icon" onclick="show_hide_menu()">
-                <div class="toggler" onclick="change_image()"></div>
-            </a>
+        <a class="icon" onclick="show_hide_menu()">
+            <div class="toggler" onclick="change_image()"></div>
+        </a>
     </nav>
     <div class="content">
-        <div class="background1">
-            <div class="text-box-1">
-                <h1>Life's a Journey...</h1>
-                <h1 class="text-bottom">Mine begins here...</h1>
-            </div>
+        <!-- This is first panel that has a background-image of 100% -->
+        <div class="main-panel">
+            <h2 class="home-name text-center">Welcome to My Portfolio!</h2>
+            <h1 class="home-title text-center">Lorem Ipsum dolor sit amet</h1>
         </div>
-            <div class="background2">
-                <h1 class="panel-title">Useful Links:</h1>
-                <div class="card" style="width: 35%">
-                    <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fab fa-github"></i> Github: <a href="https://www.github.com/Dayne-Game" target="_blank"><span class="link-name">Dayne-Game</span></a></li>
-                    <li class="list-group-item"><i class="fab fa-bitbucket"></i> Bitbucket: <a href="https://bitbucket.org/DayneGame/" target="_blank"><span class="link-name">DayneGame</span></a></li>
-                    <li class="list-group-item"><i class="fas fa-envelope"></i> Email: <a href="" target="_blank"><span class="link-name">daynegame024@gmail.com</span></a></li>
-                    <li class="list-group-item"><i class="fas fa-phone"></i> Phone Number: <span class="link-name">02102993594</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="background-3">
-                <h1>Gallery</h1>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
+        <section class="bio">
+            <div class="container">
+                <div class="row justify-content-center pb-4 pg-lg-5">
+                    <div class="col-lg-6 text-center">
+                        <h3>Lorem Ipsum</h3>
                     </div>
                 </div>
-                <div class="row gallery2">
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="http://via.placeholder.com/250x250" class="rounded float-left" alt="...">
+                <div class="row justify-content-center pb-4 pg-lg-5">
+                    <div class="col-lg-6 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae minus inventore voluptates
+                            sapiente, quibusdam nostrum corporis, atque rem amet illo beatae nam nisi veniam consequuntur
+                            debitis assumenda totam. Ea dignissimos laboriosam eum itaque quia inventore non esse animi error
+                            nulla voluptatibus modi accusamus, ad quidem harum unde nesciunt necessitatibus?</p>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="link-section">
+            <div class="container">
+                <div class="text-center">
+                    <h1>Follow Me!</h1>
+                </div>
+                <div class="row link-row">
+                    <!-- Github Link -->
+                    <div class="col-sm text-center">
+                        <a href="#">
+                            <div class="link-circle">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+                        <!-- Bitbucket Link -->
+                    </div>
+                    <div class="col-sm text-center">
+                        <a href="#">
+                            <div class="link-circle">
+                                <i class="fab fa-bitbucket"></i>
+                            </div>
+                        </a>
+                        <!-- Facebook Link -->
+                    </div>
+                    <div class="col-sm text-center">
+                        <a href="#">
+                            <div class="link-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <!-- twitter Link -->
+                    </div>
+                    <div class="col-sm text-center">
+                        <a href="#">
+                            <div class="link-circle">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <!-- Instagram Link -->
+                    </div>
+                    <div class="col-sm text-center">
+                        <a href="#">
+                            <div class="link-circle">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="code-panel">
+            <div class="container">
+                <div class="card-deck text-center" style="color:black;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">About</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab facere aliquid
+                                ducimus doloribus nulla facilis illum incidunt alias quaerat provident.</p>
+                            <a href="#" class="btn btn-primary">About Me</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Study</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure
+                                molestias corporis doloremque aliquam minima quia quos omnis eaque aut.</p>
+                            <a href="#" class="btn btn-primary">Study Page</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Career</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab facere aliquid
+                                ducimus doloribus nulla facilis illum incidunt alias quaerat provident.</p>
+                            <a href="#" class="btn btn-primary">Career Page</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, accusamus
+                                nesciunt. Illum vitae at enim in ea vel voluptatibus obcaecati.</p>
+                            <a href="#" class="btn btn-primary">Contact Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center">
+            <p>&copy; Copyright Dayne Game Portfolio 2018</p>
+        </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
