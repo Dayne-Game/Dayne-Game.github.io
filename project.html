@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+        <ul class="link-box">
+            <li>
+                <a href="index.html">Home Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">About Me
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Study Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Career Page
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="project.html">Projects
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Contact Me!
+                    <i class="fas fa-caret-left"></i>
+                </a>
+            </li>
+        </ul>
+        <a class="icon" onclick="show_hide_menu()">
+            <div class="toggler">
+                <div class="top-bar"></div>
+                <div class="bottom-bar"></div>
+            </div>
+        </a>
+    </nav>
+    <div class="content">
+
+    </div>
+    <script>
+        const url = `https://api.github.com/users/dayne-game/repos?per_page=100&client_id=434323d1801706649f11&client_secret=e694d175c07dd04801233aeb859cd16fbcdc46d0`;
+
+        fetch(url).then(function (response) {
+            return response.json();
+        })
+            .then(function (bob) {
+
+                console.log(bob)
+
+                let output = "";
+
+                for (let x of bob) {
+                    output += `<h3><a href="${x.html_url}" target="_blank" class="project-links">${x.name}</a></h3><br>`
+                }
+
+                let contnet = document.querySelector('.content').innerHTML = output;
+
+            })
+    </script>
+</body>
+
+</html>

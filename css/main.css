@@ -60,14 +60,20 @@ nav {
   width: 40px;
   height: 40px;
   margin-top: 5px;
-  margin-right: 20px;
-  background-image: url("../images/notcross.svg");
-  background-size: cover;
+  margin-right: 10px;
+  padding-top: 12px;
 }
-
-.togglerChange {
-  background-image: url("../images/cross.svg") !important;
-  background-size: cover !important;
+.top-bar,
+.bottom-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #444;
+  border-radius: 100px;
+}
+.bottom-bar {
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
 }
 
 .logo {
@@ -180,6 +186,11 @@ footer {
 
 footer > p {
   margin-bottom: 0 !important;
+}
+
+.project-links {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
