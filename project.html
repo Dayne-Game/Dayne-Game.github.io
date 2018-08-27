@@ -9,6 +9,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -56,28 +57,68 @@
         </a>
     </nav>
     <div class="content">
+        <div class="container-fluid">
+            <div class="row project justify-content-center"></div>
+        </div>
+
 
     </div>
+    </div>
     <script>
-        const url = `https://api.github.com/users/dayne-game/repos?per_page=100&client_id=434323d1801706649f11&client_secret=e694d175c07dd04801233aeb859cd16fbcdc46d0`;
+        let url =
+            "https://api.github.com/users/dayne-game/repos?per_page=100&client_id=434323d1801706649f11&client_secret=e694d175c07dd04801233aeb859cd16fbcdc46d0";
+        let output = {};
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
 
-        fetch(url).then(function (response) {
-            return response.json();
-        })
-            .then(function (bob) {
+                let row = document.querySelector('.project');
+                let result = data
+                    .map(x => {
+                        let description = " ";
 
-                console.log(bob)
+                        if (x.description !== null) {
+                            description = `${x.description}`;
+                        } else {
+                            description = "No Description ";
+                        }
 
-                let output = "";
+                        let pages = " ";
 
-                for (let x of bob) {
-                    output += `<h3><a href="${x.html_url}" target="_blank" class="project-links">${x.name}</a></h3><br>`
-                }
+                        if (x.has_pages == true) {
+                            pages = `
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://dayne-game.github.io/${x.name}" target="_blank">Go to Website</a> 
+                            </li>
+                            `;
+                        }
+                        return ` 
+                        <div class="col-sm-3 my-2 mx-2 card" style="z-index: 0">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active">Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${x.html_url}">Go to Repository</a>
+                                    </li>
+                                    ${pages}
+                                </ul>
+                            </div>
+                            <div class="card-body" style="color: black;">
+                                <h5 class="card-title">${x.name}</h5>
+                                <p class="card-text">${description}</p>
+                            </div>
+                        </div>
+                        `
+                    })
+                    .join("");
+                row.innerHTML = result;
+            });
 
-                let contnet = document.querySelector('.content').innerHTML = output;
-
-            })
     </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
