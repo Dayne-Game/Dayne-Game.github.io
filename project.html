@@ -66,7 +66,7 @@
     </div>
     <script>
         let url =
-            `https://api.github.com/users/dayne-game/repos?per_page=100&token=${process.env.GITHUB_TOKEN}`;
+            `https://api.github.com/users/dayne-game/repos?per_page=100&token=${GITHUB_TOKEN}`;
         let output = {};
         fetch(url)
             .then(response => response.json())
