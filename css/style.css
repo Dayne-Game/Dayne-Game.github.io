@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura';
+}
+body {
+    background: #222;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.link-box {
+    float: right;
+    margin-top: 10px;
+}
+
+.link-box > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+.link-box > a:hover {
+    border-bottom: solid gold 5px;
+}
+.logo {
+    height: 75px;
+    width: 75px;
+    float: left;
+    background-image: url('../img/logo.svg');
+} 
+.intro {
+    margin-top: 150px;
+    text-align: center;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+
+.intro > h1, .intro > h3 {
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.intro > h3 {
+    font-size: 20pt !important;
+    margin-top: 20px;
+}
+.markdown-border {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.markdown-top {
+    width: 100%;
+    height: 20px;
+    background-color: #444;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.circle-1 {
+    height: 10px;
+    width: 10px;
+    background-color: #666;
+    float: left;
+    border-radius: 5px;
+    margin: 5px 2px;
+}
+
+.circles {
+    margin-left: 2px;
+}
+
+.markdown-bottom {
+    width: 100%;
+    height: 20px;
+    background-color: #444;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;  
+}
+
+.text {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 15pt;
+    text-align: left;
+    font-family: 'Futura';
+}
+
+.text-center {
+    text-align: center;
+}
+
+.re-title {
+    color: lightcoral;
+    font-size: 25pt;
+}
+.green {
+    color: green;
+}
+.gray {
+    color: lightgrey;
+}
+
+.background-image {
+    background-image: url('../img/background1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.about-container {
+    color: white;
+    margin: auto;
+    width: 65%;
+}
+
+.contact-container {
+    width: 65%;
+    margin: auto;
+    color: white;
+}

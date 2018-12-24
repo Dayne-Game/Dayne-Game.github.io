@@ -1,9 +1,0 @@
-<div class="col-sm-3 mt-2 mx-2 card project-card">
-                        <div class="card-body ">
-                            <h5 class="card-title ">${x.name}</h5>
-                            <p class="card-text ">${description}</p>
-                            <a href="${
-                            x.html_url
-                            } " target="_blank ">Click here to view the Repo</a>${pages}
-                        </div>
-                    </div>
