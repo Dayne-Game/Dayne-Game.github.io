@@ -2,9 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body {
-    background: #222;
+    font-family: 'Futura';
 }
 
 .navbar {
@@ -142,3 +140,46 @@ body {
     margin: auto;
     color: white;
 }
+
+.link-box .icon {
+    display: none;
+    color: white;
+    font-size: 29pt;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .link-box a.icon {
+      float: right;
+      display: block;
+    }
+
+    .link-box > a:not(:last-child) {
+        display: none;
+        background-color: #333;
+    }
+    .link-box > a:hover:not(:last-child) {
+        color: #f63f5e;
+    }
+    .link-box > a:hover {
+        border-bottom: 0px;
+    }
+    .link-box.responsive {position: relative;}
+    .link-box.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .link-box.responsive a:not(:last-child) {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .link-box {
+        float: none;
+        margin-top: 0px;
+    }
+    .navbar {
+        padding-right: 0px;
+    }
+  }
