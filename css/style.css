@@ -10,6 +10,7 @@
     height: 75px;
     list-style-type: none;
     padding-right: 10px;
+    padding-bottom: 80px;
 }
 
 .link-box {
@@ -146,7 +147,10 @@
     color: white;
     font-size: 29pt;
     cursor: pointer;
-  }
+}
+.link-box.responsive {
+    padding-top: 84px !important;
+}
   
   @media screen and (max-width: 768px) {
     .link-box a.icon {
@@ -156,10 +160,10 @@
 
     .link-box > a:not(:last-child) {
         display: none;
-        background-color: #333;
+        background-color: #555;
     }
-    .link-box > a:hover:not(:last-child) {
-        color: #f63f5e;
+    .link-box.responsive > .about {
+        margin-top: -6px !important;
     }
     .link-box > a:hover {
         border-bottom: 0px;
@@ -177,7 +181,7 @@
     }
     .link-box {
         float: none;
-        margin-top: 0px;
+        margin-top: 0px !important;
     }
     .navbar {
         padding-right: 0px;
