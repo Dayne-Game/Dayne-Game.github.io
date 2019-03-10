@@ -13,23 +13,100 @@
 </head>
 
 <body>
-    <div class="background-image">
-        <div class="navbar">
-            <a href="index.html">
-                <div class="logo"></div>
+    <div class="background" id="home">
+        <img src="img/logo.svg" class="background-logo" style="width: 600px;" alt="logo">
+    </div>
+    <div class="navbar">
+        <a href="#home">
+            <div class="logo"></div>
+        </a>
+        <div class="link-box">
+            <a class="about" href="#about">ABOUT</a>
+            <a class="project" href="#projects">PROJECTS</a>
+            <a class="resume" href="#resume">RÉSUMÉ</a>
+            <a class="contact" href="#contact">CONTACT</a>
+            <a class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
             </a>
-            <div class="link-box">
-                <a class="about" href="about.html">ABOUT</a>
-                <a class="project" href="projects.html">PROJECTS</a>
-                <a class="resume" href="resume.html">RÉSUMÉ</a>
-                <a class="contact" href="contact.html">CONTACT</a>
-                <a class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+        </div>
+    </div>
+    <div class="about-section" id="about">
+        <div class="row">
+            <div class="column about-image">
+                <img src="img/profile.jpg" class="profile-image">
+            </div>
+            <div class="column about-text">
+                <h1>ABOUT ME</h1>
+                <br>
+                <h1>My name is Dayne Game, i'm currently living in Papamoa Beach, Tauranga. I'm 17 years old and just
+                    starting my 3rd year of my degree with Toi Ohomai. I left college (High School) when I was 15 to
+                    pursue a degree in Computer Science/IT. I graduate with my degree in June of 2020. I love making web
+                    based applications whether it be desktop software, mobile app or website. My goal is to become a
+                    Full Stack Web Developer, so it enables me to work on everything to do with web based technologies.
+                </h1>
             </div>
         </div>
     </div>
+    <div class="project-section" id="projects">
+        <div class="row">
+            <div class="project-text">
+                <center>
+                    <h1>PROJECTS</h1>
+                </center>
+                <br>
+                <h2>WWG Backyard Website - <span class="red">Work in Progress</span></h2>
+                <br>
+                <h2>Good Neighbour Website - <span class="red">Work in Progress</span></h2>
+                <br>
+                <h2>Rugby 7's Website (My Toi Ohomai Project) - <span class="blue">Just Started</span></h2>
+                <br>
+                <h2>Github API Application - <span class="blue">Completed</span></h2>
+                <br>
+                <h2>All my Toi Ohomai Assignments - <span class="blue">Completed (As of Nov 2018)</span></h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="resume-section" id="resume">
+        <div class="temp">
+            <h1 class="title"><span class="blue">Work in Progress</span></h1>
+        </div>
+    </div>
+    <div class="contact-section" id="contact">
+        <div class="temp">
+            <h1 class="title"><span class="blue">Work in Progress</span></h1>
+        </div>
+    </div>
     <script src="js/script.js"></script>
+
+    <!-- This is for the Scroll Effect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
 
 </html>
