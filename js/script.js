@@ -9,7 +9,6 @@ function myFunction() {
     }
 }
 
-
 window.onscroll = function () { stickyNav() };
 var nav = document.querySelector('.navbar');
 var sticky = nav.offsetTop;
