@@ -1,0 +1,163 @@
+body {
+  background: #1d1d1d !important;
+}
+
+.icon-bar {
+  background: #181818;
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.contact-details-container a {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  color: #444 !important;
+}
+
+.nav-icons b {
+  display: none !important;
+  font-size: 11px;
+  font-weight: 100;
+  height: 33px;
+  color: #909096;
+}
+
+.nav-icons i {
+  display: block;
+  font-size: 25px;
+  line-height: 51px;
+}
+
+.nav-icons a:hover i {
+  display: none !important;
+}
+
+.nav-icons a:hover b {
+  display: block !important;
+}
+
+.icon-box {
+  background: #000000;
+  padding: 20px 10px;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  padding: 5px;
+  color: lightgray !important;
+}
+
+.nav-icons a {
+  margin-bottom: 15px;
+  height: 51px;
+  text-align: center;
+  line-height: 51px;
+}
+
+.active {
+  color: white !important;
+}
+
+.home-section {
+  padding-top: 10rem;
+  background: #1d1d1d;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  margin-left: 60px !important;
+}
+
+.heading-title-h1 {
+  font-size: 60px;
+  color: #08fdd8 !important;
+  font-weight: bold;
+}
+
+.heading-subtitle {
+  color: #08fdd8 !important;
+  font-weight: 500;
+}
+
+.para {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.red {
+  color: #ef496f !important;
+}
+
+.home-container,
+.about-container,
+.skill-container,
+.projects-container,
+.contact-container {
+  position: absolute;
+  top: 32%;
+  left: 200px;
+  width: calc(100vw - 200px);
+}
+
+.projects-container,
+.contact-container {
+  top: 25% !important;
+}
+
+.home-name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.home-tagline {
+  color: #8d8d8d;
+  font-size: 23px;
+}
+
+.home-button {
+  color: #08fdd8 !important;
+  border: 1px solid #08fdd8 !important;
+  padding: 10px;
+}
+
+.timeline {
+  width: 700px;
+}
+
+.about-container {
+  top: 20% !important;
+}
+
+a {
+  color: #08fdd8 !important;
+}

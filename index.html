@@ -1,112 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Portfolio | Dayne Game</title>
-</head>
-
-<body>
-    <div class="background" id="home">
-        <img src="img/logo.svg" class="background-logo" style="width: 600px;" alt="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dayne Game | Portfolio</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="icon-bar">
+      <div class="icon-box">
+        <img src="images/logo.svg" width="40" alt="DG Logo" />
+      </div>
+      <div class="nav-icons">
+        <a href="index.html"><i class="fa fa-home active"></i><b>HOME</b></a>
+        <a href="about.html"><i class="fas fa-user"></i><b>ABOUT</b></a>
+        <a href="skills.html"><i class="fas fa-cog"></i><b>SKILLS</b></a>
+        <a href="projects.html"><i class="fas fa-eye"></i><b>PROJECTS</b></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><b>CONTACT</b></a>
+      </div>
+      <div class="social-icons">
+        <a href="https://twitter.com/Dano_Gamo"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/DanoGamo"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
     </div>
-    <div class="navbar">
-        <a href="#home">
-            <div class="logo"></div>
-        </a>
-        <div class="link-box">
-            <a class="about" href="#about">ABOUT</a>
-            <a class="project" href="#projects">PROJECTS</a>
-            <a class="resume" href="#resume">RÉSUMÉ</a>
-            <a class="contact" href="#contact">CONTACT</a>
-            <a class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </div>
-    <div class="about-section" id="about">
-        <div class="row">
-            <div class="column about-image">
-                <img src="img/profile.jpg" class="profile-image">
-            </div>
-            <div class="column about-text">
-                <h1>ABOUT ME</h1>
-                <br>
-                <h1>My name is Dayne Game, i'm currently living in Papamoa Beach, Tauranga. I'm 17 years old and just
-                    starting my 3rd year of my degree with Toi Ohomai. I left college (High School) when I was 15 to
-                    pursue a degree in Computer Science/IT. I graduate with my degree in June of 2020. I love making web
-                    based applications whether it be desktop software, mobile app or website. My goal is to become a
-                    Full Stack Web Developer, so it enables me to work on everything to do with web based technologies.
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div class="project-section" id="projects">
-        <div class="row">
-            <div class="project-text">
-                <center>
-                    <h1>PROJECTS</h1>
-                </center>
-                <br>
-                <h2>WWG Backyard Website - <span class="red">Work in Progress</span></h2>
-                <br>
-                <h2>Good Neighbour Website - <span class="red">Work in Progress</span></h2>
-                <br>
-                <h2>Rugby 7's Website (My Toi Ohomai Project) - <span class="blue">Just Started</span></h2>
-                <br>
-                <h2>Github API Application - <span class="blue">Completed</span></h2>
-                <br>
-                <h2>All my Toi Ohomai Assignments - <span class="blue">Completed (As of Nov 2018)</span></h2>
-
-            </div>
-        </div>
-    </div>
-    <div class="resume-section" id="resume">
-        <div class="temp">
-            <h1 class="title"><span class="blue">Work in Progress</span></h1>
-        </div>
-    </div>
-    <div class="contact-section" id="contact">
-        <div class="temp">
-            <h1 class="title"><span class="blue">Work in Progress</span></h1>
-        </div>
-    </div>
+    <section class="home-section">
+      <div class="home-container">
+        <h1 class="home-name text-white">
+          Hello There<span class="red">.</span>
+        </h1>
+        <h1 class="home-name text-white mb-4">
+          I'm Dayne, a web developer<span class="red">.</span>
+        </h1>
+        <p class="home-tagline mb-4">
+          Front End Developer / Full Stack Developer
+        </p>
+        <a href="contact.html" class="home-button">CONTACT ME!</a>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-
-    <!-- This is for the Scroll Effect -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-</body>
-
+  </body>
 </html>
