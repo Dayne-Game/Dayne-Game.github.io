@@ -2,83 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skill | Portfolio</title>
-    <link rel="stylesheet" href="style/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dayne Game | Skills</title>
   </head>
   <body>
-    <div class="icon-bar">
-      <div class="icon-box">
-        <img src="images/logo.svg" width="40" alt="DG Logo" />
-      </div>
-      <div class="nav-icons">
-        <a href="index.html"><i class="fa fa-home"></i><b>HOME</b></a>
-        <a href="about.html"><i class="fas fa-user"></i><b>ABOUT</b></a>
-        <a href="skills.html"><i class="fas fa-cog active"></i><b>SKILLS</b></a>
-        <a href="projects.html"><i class="fas fa-eye"></i><b>PROJECTS</b></a>
-        <a href="contact.html"><i class="fas fa-envelope"></i><b>CONTACT</b></a>
-      </div>
-      <div class="social-icons">
-        <a href="https://twitter.com/Dano_Gamo"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="https://www.facebook.com/DanoGamo"
-          ><i class="fab fa-facebook"></i
-        ></a>
-      </div>
-    </div>
-    <section class="skills-section">
-      <div class="skill-container">
-        <div class="row">
-          <div class="col-lg-5">
-            <h1 class="mb-4 heading-title-h1">My Skills</h1>
-            <div class="para">
-              <p>
-                I like Full Stack Web Development, so I don't mind Front-end or
-                Back-end development, but if I had a choice I would choose
-                Front-end development.
-              </p>
-              <p>
-                I have a lot of experiance with HTML, CSS, JS, React, MongoDB,
-                REST API and Express API. I have built small and medium
-                applications, and very eager to be part of a team to develop
-                large applications.
-              </p>
-              <p>
-                I have also had experiance with various CMS's. Such as
-                WordPress, Netlify CMS, and especially GatsbyJS.
-              </p>
-            </div>
-          </div>
+    <!-- Full Screen Overlay Component -->
+    <div class="overlay">
+      <div class="inner-overlay">
+        <div class="overlay-greeting">
+          <h1 class="overlay-welcome" style="font-weight: 500">My Skills</h1>
+          <h1 class="overlay-subtitle">Dayne Game <span class="vertical"></span> Portfolio</h1>
         </div>
       </div>
-    </section>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+
+    <!-- Header Component -->
+    <div class="header">
+      <h1 class="header-text"><a href="index.html" style="text-decoration: none; color: #333">DAYNE GAME</a></h1>
+      <h1><span class="sidebar-open-btn" onclick="openSidebar()">&#9776;</span></h1>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="popout-sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+      <div class="sidebar-content">
+        <a href="about.html">About</a>
+        <a href="experiance.html">Experience</a>
+        <a href="skills.html" class="active">My Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="assets/resume.pdf" download="Dayne-Game-CV" style="margin-top: 70px"><span class="sidebar-resume-download">My Resume</span></a>
+      </div>
+    </div>
+
+    <!-- Webpage Content -->
+    <div class="container">
+      <h1 class="heading"><span class="text-background">My Skills</span></h1>
+      <div class="paragraph">
+        <p>
+          While I was studying, I was always learning new skills, whether that as a new language, framework, or even trying to find a more efficient way to code, I was always learning which I’m still doing to this day. Keeping the mind active, is very good thing, I built various of mini
+          projects/applications while studying and even now.
+        </p>
+      </div>
+      <h2 style="margin-bottom: 20px">My Skills Graph</h2>
+      <div class="skill-graph">
+        <div class="skills-container">
+          <div class="skills html"><span class="skill-background">HTML</span> <span class="percent">70%</span></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills css"><span class="skill-background">CSS</span> <span class="percent">65%</span></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills js"><span class="skill-background">JS</span> <span class="percent">60%</span></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills react"><span class="skill-background">React</span> <span class="percent">60%</span></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills c-sharp"><span class="skill-background">C#</span> <span class="percent">30%</span></div>
+        </div>
+        <div class="skills-container">
+          <div class="skills php"><span class="skill-background">PHP</span> <span class="percent">40%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div class="footer">
+      <h2><a href="facebook.com" class="social facebook">Facebook.</a><a href="twitter.com" class="social twitter">Twitter.</a></h2>
+      <h2><a href="assets/resume.pdf" download="Dayne-Game-CV" class="resume-download">My Resume</a></h2>
+    </div>
+
+    <!-- Import script.js -->
+    <script src="js/script.js"></script>
   </body>
 </html>

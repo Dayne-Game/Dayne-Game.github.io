@@ -2,90 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me | Portfolio</title>
-    <link rel="stylesheet" href="style/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dayne Game | About</title>
   </head>
   <body>
-    <div class="icon-bar">
-      <div class="icon-box">
-        <img src="images/logo.svg" width="40" alt="DG Logo" />
-      </div>
-      <div class="nav-icons">
-        <a href="index.html"><i class="fa fa-home"></i><b>HOME</b></a>
-        <a href="about.html"><i class="fas fa-user active"></i><b>ABOUT</b></a>
-        <a href="skills.html"><i class="fas fa-cog"></i><b>SKILLS</b></a>
-        <a href="projects.html"><i class="fas fa-eye"></i><b>PROJECTS</b></a>
-        <a href="contact.html"><i class="fas fa-envelope"></i><b>CONTACT</b></a>
-      </div>
-      <div class="social-icons">
-        <a href="https://twitter.com/Dano_Gamo"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="https://www.facebook.com/DanoGamo"
-          ><i class="fab fa-facebook"></i
-        ></a>
-      </div>
-    </div>
-    <section class="about-section">
-      <div class="about-container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h1 class="mb-4 heading-title-h1">About me</h1>
-            <div class="para">
-              <p>
-                Hi. I'm Dayne Game and i'm 19 years old. I just graduated from
-                Toi Ohomai Institute of Technology with a Bachelor in Applied
-                Information Technology.
-              </p>
-              <p>
-                Well-rounded person, hardworking, problem solver, and very
-                passionate in my craft which is web development (especially when
-                using React!).
-              </p>
-              <p>
-                I have a strong passion for the MERN Stack (Hence why a Full
-                Stack Developer…), I have created multiple React Web
-                Applications in the past, and now branching of to do full MERN
-                Stack applications in my spare time to learn the fundamentals.
-              </p>
-              <p class="mb-4">
-                When I’m not coding and creating elegant React and or basic
-                HTML, CSS Web Applications, I’m usually gaming, spending time
-                with my mates, or helping my family with their business.
-              </p>
-            </div>
-            <img src="images/timeline.svg" class="timeline" alt="Timeline" />
-          </div>
+    <!-- Full Screen Overlay Component -->
+    <div class="overlay">
+      <div class="inner-overlay">
+        <div class="overlay-greeting">
+          <h1 class="overlay-welcome" style="font-weight: 500">About me</h1>
+          <h1 class="overlay-subtitle">Dayne Game <span class="vertical"></span> Portfolio</h1>
         </div>
       </div>
-    </section>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+
+    <!-- Header Component -->
+    <div class="header">
+      <h1 class="header-text"><a href="index.html" style="text-decoration: none; color: #333">DAYNE GAME</a></h1>
+      <h1><span class="sidebar-open-btn" onclick="openSidebar()">&#9776;</span></h1>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="popout-sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+      <div class="sidebar-content">
+        <a href="about.html" class="active">About</a>
+        <a href="experiance.html">Experience</a>
+        <a href="skills.html">My Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="assets/resume.pdf" download="Dayne-Game-CV" style="margin-top: 70px"><span class="sidebar-resume-download">My Resume</span></a>
+      </div>
+    </div>
+
+    <!-- Webpage Content -->
+    <div class="container">
+      <h1 class="heading"><span class="text-background">About me</span></h1>
+      <div class="paragraph">
+        <p>
+          Hello. I’m Dayne (aka Dano). I moved down to Tauranga from Auckland in late 2016, with my Family, happily residing in Papamoa Beach. I dropped out of high school at age 15, to pursue a career in computer science. 2020 passed by and now I have my bachelor’s in applied information technology
+          by the age of 19. I have done various projects for tech, and for personal use, and always willing to learn the next big thing. I have used various types of technologies from basic HTML & CSS websites to Full Stack MERN Applications, that I’m very proud of!
+        </p>
+        <p>While learning and developing applications, I created a knack for designing my own applications, especially websites, as well as the websites that I built while I was at tech and have fallen quite in love with designing applications.</p>
+        <img src="assets/timeline.svg" class="timeline" alt="My Timeline Image" />
+      </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div class="footer">
+      <h2><a href="facebook.com" class="social facebook">Facebook.</a><a href="twitter.com" class="social twitter">Twitter.</a></h2>
+      <h2><a href="assets/resume.pdf" download="Dayne-Game-CV" class="resume-download">My Resume</a></h2>
+    </div>
+
+    <!-- Import script.js -->
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="105" viewBox="0 0 400 105">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-custom_1);
+      }
+
+      .cls-2, .cls-3, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        stroke: #818181;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #707070;
+        font-size: 8px;
+      }
+
+      .cls-4, .cls-9 {
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-5 {
+        stroke: #ff2e2e;
+      }
+
+      .cls-5, .cls-6, .cls-8 {
+        stroke-width: 5px;
+      }
+
+      .cls-6 {
+        stroke: #95cae2;
+      }
+
+      .cls-7 {
+        fill: #333;
+        font-size: 7px;
+        font-family: HelveticaNeue-Medium, Helvetica Neue;
+        font-weight: 500;
+      }
+
+      .cls-8 {
+        stroke: #95e2cd;
+      }
+
+      .cls-9 {
+        fill: #818181;
+        font-size: 10px;
+      }
+    </style>
+    <clipPath id="clip-custom_1">
+      <rect width="400" height="105"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" class="cls-1">
+    <line id="Line_1" data-name="Line 1" class="cls-2" x2="298" transform="translate(-3.5 84.5)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-3" y2="20" transform="translate(0.5 74.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-3" y2="20" transform="translate(62.5 74.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-3" y2="20" transform="translate(124.5 73.5)"/>
+    <line id="Line_5" data-name="Line 5" class="cls-3" y2="20" transform="translate(186.5 73.5)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-3" y2="20" transform="translate(248.5 73.5)"/>
+    <text id="_2016" data-name="2016" class="cls-4" transform="translate(6 97)"><tspan x="0" y="0">2016</tspan></text>
+    <text id="_2017" data-name="2017" class="cls-4" transform="translate(68 97)"><tspan x="0" y="0">2017</tspan></text>
+    <text id="_2018" data-name="2018" class="cls-4" transform="translate(130 97)"><tspan x="0" y="0">2018</tspan></text>
+    <text id="_2019" data-name="2019" class="cls-4" transform="translate(192 97)"><tspan x="0" y="0">2019</tspan></text>
+    <text id="_2020" data-name="2020" class="cls-4" transform="translate(254 97)"><tspan x="0" y="0">2020</tspan></text>
+    <line id="Line_7" data-name="Line 7" class="cls-5" x2="63" transform="translate(-0.5 64.5)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-6" x2="207" transform="translate(62.5 64.5)"/>
+    <text id="Moved_to_Tauranga_age_15_" data-name="Moved to 
+Tauranga (age 15)" class="cls-7" transform="translate(3 42)"><tspan x="0" y="7">Moved to </tspan><tspan x="0" y="16">Tauranga (age 15)</tspan></text>
+    <text id="Bay_of_Plenty_Project_age_17_-_18_" data-name="Bay of Plenty Project (age 17 - 18)" class="cls-7" transform="translate(185 12)"><tspan x="0" y="7">Bay of Plenty Project </tspan><tspan x="0" y="16">(age 17 - 18)</tspan></text>
+    <text id="Study_at_Toi_Ohomai_age_15_-_19_" data-name="Study at Toi Ohomai (age 15 - 19)" class="cls-7" transform="translate(108 51)"><tspan x="0" y="7">Study at Toi Ohomai (age 15 - 19)</tspan></text>
+    <line id="Line_9" data-name="Line 9" class="cls-8" x2="62" transform="translate(186.5 35.5)"/>
+    <text id="Timeline" class="cls-9" transform="translate(0 9)"><tspan x="0" y="10">Timeline</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,528 @@
+/* CSS FOR DAYNE GAME PORTFOLIO
+
+/* MULTI USE COMPONENTS (HEADER, FOOTER, CONTAINER, SIDEBAR ETC) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin-top: 160px;
+  padding: 0px 400px;
+}
+
+.text-background {
+  background: #f4f4f4;
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 80px;
+}
+
+.active {
+  color: #333 !important;
+  pointer-events: none;
+}
+
+.vertical {
+  border-left: 3px solid #818181;
+  height: 300px;
+  margin-right: 7px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 80px;
+  background: #fff;
+  z-index: 1000;
+
+  animation: fadeOutAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.inner-overlay {
+  background: #f4f4f4;
+  height: calc(100vh - 160px);
+}
+
+.overlay-greeting {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 200px);
+  text-align: center;
+}
+
+.overlay-welcome {
+  font-size: 7rem;
+  font-weight: 300;
+  color: #818181;
+}
+
+.overlay-subtitle {
+  font-weight: 400;
+}
+
+/* ---- Header and Footer Components */
+.header,
+.footer {
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  line-height: 60px;
+  width: 100%;
+  padding: 80px 300px;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.social,
+.resume-download {
+  margin-right: 15px;
+  color: #333;
+}
+
+.facebook:hover,
+.twitter:hover,
+.resume-download:hover {
+  color: #818181;
+}
+
+/* ---- Popout Sidebar Components */
+.popout-sidebar {
+  position: fixed;
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sidebar-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.popout-sidebar a {
+  padding: 8px 8px 8px 32px;
+  font-size: 3rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar-content a:hover,
+.sidebar-content a:focus {
+  color: #333;
+}
+
+.sidebar-resume-download {
+  background: #ddd;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.sidebar-resume-download:hover {
+  padding: 25px;
+  transition: 0.4s;
+}
+
+.popout-sidebar .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.sidebar-open-btn {
+  cursor: pointer;
+}
+
+.sidebar-open-btn:hover {
+  color: #818181;
+}
+
+/* INDEX.HTML STYLES */
+.title-content {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  margin-top: 25px;
+}
+
+/* ABOUT.HTML STYLES */
+.paragraph {
+  width: 50%;
+}
+
+.timeline {
+  height: 200px;
+}
+
+/* EXPERIANCE.HTML STYLES */
+.dates {
+  font-weight: 400;
+  color: #818181;
+  border-left: 3px solid #333;
+  padding-left: 6px;
+}
+
+/* SKILLS.HTML STYLES */
+.skill-graph {
+  width: 600px;
+}
+
+.skills-container {
+  width: 100%;
+  background: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.skills {
+  text-align: left;
+  padding: 10px 10px 10px 0px;
+}
+
+.skill-background {
+  background: rgba(200, 200, 200, 0.9);
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+}
+
+.percent {
+  float: right;
+}
+
+.skills {
+  background: #ddd;
+}
+
+.html {
+  width: 70%;
+}
+
+.css {
+  width: 65%;
+}
+
+.c-sharp {
+  width: 30%;
+}
+
+.php {
+  width: 40%;
+}
+
+.js,
+.react {
+  width: 60%;
+}
+
+/* PROJECTS.HTML STYLES */
+
+.projects-container {
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* CONTACT.HTML STYLES */
+
+/* MEDIA QUERIES FOR ALL PAGES */
+@media only screen and (min-width: 2501px) and (max-width: 3250px) {
+  .title-content {
+    left: 25%;
+  }
+
+  .paragraph {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 2500px) {
+  .header,
+  .footer {
+    padding: 80px;
+  }
+  .container {
+    padding: 0px 80px;
+  }
+
+  .title-content {
+    left: 28%;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+  .paragraph {
+    width: 70%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1301px) {
+  .paragraph {
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .title-content {
+    left: 50%;
+    width: calc(100% - 200px);
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px !important;
+  }
+
+  .experiance-header {
+    font-size: 1.5rem;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .header,
+  .footer {
+    padding: 0 20px 0 20px;
+    background: #fff;
+  }
+
+  .container {
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  .title-content {
+    text-align: center;
+    left: 50%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px !important;
+  }
+
+  .overlay-welcome {
+    font-size: 4rem;
+  }
+
+  .overlay-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    display: none;
+  }
+
+  .sidebar-content {
+    top: 15%;
+  }
+
+  .popout-sidebar .close-btn {
+    right: 20px;
+  }
+
+  .popout-sidebar a {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px !important;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .experiance-header {
+    font-size: 1.2rem;
+  }
+
+  .overlay-welcome {
+    font-size: 3rem;
+  }
+
+  .overlay-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .overlay {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .timeline {
+    height: 130px;
+  }
+
+  .skill-graph {
+    width: 100%;
+  }
+
+  .skill-background {
+    width: 60px;
+  }
+
+  .html {
+    width: 80%;
+  }
+  .css {
+    width: 75%;
+  }
+  .js,
+  .react {
+    width: 70%;
+  }
+  .c-sharp {
+    width: 40%;
+  }
+
+  .php {
+    width: 50%;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .paragraph h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .header-text {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .timeline {
+    width: calc(100% - 40px);
+  }
+}
