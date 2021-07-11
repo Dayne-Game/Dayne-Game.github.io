@@ -13,7 +13,7 @@ function closeSidebar() {
 
 // Function that Closes Overlay
 
-window.setTimeout("closeOverlay()", 4200);
+window.setTimeout("closeOverlay()", 2000);
 
 function closeOverlay() {
   document.querySelector(".overlay").style.display = "none";
